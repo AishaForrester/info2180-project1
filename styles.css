@@ -1,4 +1,6 @@
 /* Add your CSS to this file */
+
+
 body {
     margin: 0;
     font-size: 16px;
@@ -9,10 +11,12 @@ body {
     max-width: 960px;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
     justify-content: space-between;
     align-items: center;
+    
 }
+/*section 2*/
 
 nav a {
     text-decoration: none;
@@ -20,6 +24,7 @@ nav a {
 
 nav ul {
     display: flex;
+    list-style: none;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -30,3 +35,64 @@ nav ul li {
     margin-right: 20px;
     
 }
+
+/*section 3*/
+
+.overview-hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.overview-hero-image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    text-align: center;
+    max-width: 100%;
+    
+         
+}
+.overview-hero-text {
+    flex: 1;
+    padding: 20px;
+    
+}
+
+/*section 4*/
+
+.learn-about .cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.learn-about .container {  
+    flex-direction: column;
+}
+/*Here I am overwriting the container as it was set to display its children in default row before*/
+
+.learn-about .card {
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.learn-about .card img{
+    width: 150px;
+    height: 150px;
+}
+.learn-about .card-body h3 {
+    color: aquamarine;
+}
+
+.learn-about .container h2 {
+    color: aquamarine;
+    align-self: flex-start;
+    
+}
+
+/*Section 5*/

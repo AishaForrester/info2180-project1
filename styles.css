@@ -16,7 +16,7 @@ body {
     align-items: center;
     
 }
-/*section 2*/
+/*Section 2*/
 
 nav a {
     text-decoration: none;
@@ -36,7 +36,7 @@ nav ul li {
     
 }
 
-/*section 3*/
+/*Section 3*/
 
 .overview-hero {
     display: flex;
@@ -60,7 +60,7 @@ nav ul li {
     
 }
 
-/*section 4*/
+/*Section 4*/
 
 .learn-about .cards {
     display: grid;
@@ -96,3 +96,43 @@ nav ul li {
 }
 
 /*Section 5*/
+
+.testing .container { /*container rough work*/
+    background-color: darkblue;
+    width: 1200px;
+    height: 250px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.testing .container .testing-desciption { /*words div h2 and p*/
+    max-width: 65%;
+}
+
+.testing .container .testing-desciption h2 {
+    color: white;
+}
+.testing .container .testing-desciption p {
+    color: white;
+}
+.testing .container .cta {  /*button*/
+    background-color: lawngreen;
+    border: none;
+    border-radius: 5px;
+    padding: 18px 45px;
+    width: 100px; 
+}
+
+.testing .container .cta:hover {
+    background-color: bisque;
+}
+
+
+.cta a.btn {
+    text-decoration: none;
+    color: white;
+     
+}
+
+/*Section 6*/
+
+

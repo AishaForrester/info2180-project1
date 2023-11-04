@@ -1,5 +1,10 @@
 /* Add your CSS to this file */
 
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+}
+
 
 body {
     margin: 0;
@@ -11,7 +16,6 @@ body {
     max-width: 960px;
     width: 100%;
     display: flex;
-    /*flex-direction: row;*/
     justify-content: space-between;
     align-items: center;
     
@@ -20,6 +24,7 @@ body {
 
 nav a {
     text-decoration: none;
+    color: #6b7280;
 }
 
 nav ul {
@@ -33,30 +38,47 @@ nav ul {
 nav ul li {
     list-style: none;
     margin-right: 20px;
+    font-size: 18px;
     
 }
 
+nav a:hover {
+    color: #5A67D8;
+}
+
+
 /*Section 3*/
+
+header {
+    background-color: white;
+}
+header .container { /*controls spacing in overview-hero section*/
+    padding: 30px;
+    
+}
 
 .overview-hero {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+      
+}
+.overview-hero .container {
+    background-color: #E2E8F0;
+    padding: 25px;
     
 }
 .overview-hero-image img{
-    width: 150px;
-    height: 150px;
-    border-radius: 10%;
+    width: 200px;
+    height: 130px;
+    border-radius: 5%;
     text-align: center;
-    max-width: 100%;
-    
-         
 }
 .overview-hero-text {
     flex: 1;
     padding: 20px;
+    max-width: 70%;
     
 }
 
@@ -75,22 +97,26 @@ nav ul li {
 /*Here I am overwriting the container as it was set to display its children in default row before*/
 
 .learn-about .card {
-    border: 1px solid;
     padding: 10px;
     margin: 10px;
-    
+    height: 450px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-color: #E2E8F0;
+    border-radius: 5px;
 }
 
 .learn-about .card img{
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 220px;
 }
 .learn-about .card-body h3 {
-    color: aquamarine;
+    color: #48BB78;
+    font-size: 21px;
 }
 
 .learn-about .container h2 {
-    color: aquamarine;
+    color: #48BB78;
+    font-size: 24px;
     align-self: flex-start;
     
 }
@@ -98,11 +124,13 @@ nav ul li {
 /*Section 5*/
 
 .testing .container { /*container rough work*/
-    background-color: darkblue;
+    background-color: #4A5568;
     width: 1200px;
     height: 250px;
     padding-left: 40px;
     padding-right: 40px;
+    margin-top: 20px; /*allowing section room to breathe*/
+    margin-bottom: 50px;
 }
 .testing .container .testing-desciption { /*words div h2 and p*/
     max-width: 65%;
@@ -115,7 +143,7 @@ nav ul li {
     color: white;
 }
 .testing .container .cta {  /*button*/
-    background-color: lawngreen;
+    background-color: #48BB78;
     border: none;
     border-radius: 5px;
     padding: 18px 45px;
@@ -137,6 +165,13 @@ nav ul li {
 
 .stories .container { /*overwriting the container default flex direction which is row*/
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stories .container h2 {
+    align-self: flex-start;
+    color: #5A67D8;
 }
 
 .stories .container img { /*adding styles to our photos to have them rounded and spaced from text*/
@@ -149,8 +184,71 @@ nav ul li {
 article { /*targetting our two articles to have them display their children in a row*/
     display: flex;
     flex: row;
+    margin-bottom: 20px;
 }
 
 article .article-body a { /*removing underline from link*/
     text-decoration: none;
+    color: #5A67D8;
+}
+
+article .article-body h3 {
+    font-size: 18px;
+}
+
+/*Section 7*/
+
+.newsletter .container { /*Again, overwriting our newsletter so its children can be vertical*/
+    flex-direction: column;
+    background-color: #48BB78;
+    width: 1200px;
+    height: 250px;
+    
+}
+
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    
+}
+
+.newsletter .container .btn {
+    background-color: #5A67D8;
+    border: none;
+    border-radius: 5px;
+    width: 130px;
+    height: 50px;
+    color: white;
+}
+
+form input {
+    width: 350px;
+    height: 40px;
+    margin: 10px;
+    
+}
+
+.newsletter .container h3{
+    color: white;
+}
+.newsletter .container p{
+    color: white;
+    max-width: 50%;
+}
+
+footer .container {
+    background-color: #4A5568;
+    
+    
+    
+}
+footer .container p{
+    color: white;
+    margin-left:  60px;
+    
+    
 }
